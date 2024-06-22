@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    border: solid 2px #cc0707;
+}
+
+h1 {
+    color: #333;
+    border-color: #cc0707 ;
+}
+
+/* Estilos para la sección de botones y opciones */
+#group-btn {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: solid 2px #cc0707;
+}
+
+.game-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.game-btn img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.game-btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos para los botones de acción y el campo de intentos */
+div > button.button-78 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 10px;
+}
+
+div > button.button-78:hover {
+    background-color: #fff;
+}
+
+div > button.button-78:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+/* Estilos para la sección de resultados */
+#result {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#result img {
+    width: 150px;
+    height: 150px;
+}
+
+#start-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Estilos para la sección de puntuaciones */
+#score {
+    margin-top: 20px;
+}
+
+#score p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+#score span {
+    font-weight: bold;
+    color: #333;
+}
