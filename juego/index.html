@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div id="result">
+            <img id="machine-img" src="assets/Piedra.png" alt="Machine Choice">
+            <div id="start-text">Choose an option</div>
+            <img id="user-img" src="assets/User.png">
+        </div>
+        <div id="group-btn">
+            <button id="piedra" type="button" class="game-btn"> <img src="assets/Piedra.png"></button>
+            <button id="papel" type="button" class="game-btn"><img src="assets/Papel.png"></button>
+            <button id="tijeras" type="button" class="game-btn"><img src="assets/tijeras.png"></button>
+        </div>
+        <div>
+            <label for="attempts">Attempts:</label>
+            <input type="number" id="attempts" value="3" min="1">
+            <button id="start-game" class="button-78">Start Game</button>
+        </div>
+        <div>
+            <button id="singleplayer" class="button-78">Single Player</button>
+            <button id="multiplayer" class="button-78">Multiplayer</button>
+        </div>
+        <div>
+            <p>Player 1 Score: <span id="player1-score">0</span></p>
+            <p>Player 2 Score: <span id="player2-score">0</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
